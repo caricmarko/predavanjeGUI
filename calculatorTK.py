@@ -50,6 +50,6 @@ Button(window, text = "=", command = calc, font = ("Times 18"), width = 4).grid(
 Button(window, text = "0", command = lambda:add("0"), font = ("Times 18"), width = 4).grid(sticky = EW, row = 5, columnspan = 2)
 Button(window, text = ".", command = lambda:add("."), font = ("Times 18"), width = 4).grid(row = 5, column = 2)
 
-Label(window, text = "made by @python3_fun").grid(row = 6, columnspan = 4)
+Label(window, text = "made by @mixipro").grid(row = 6, columnspan = 4)
 
 window.mainloop()
