@@ -30,8 +30,6 @@ ttk.Button(root, text='Scissors', command=lambda: select('Scissors')).pack()
 
 root.mainloop()
 
-root.mainloop()
-
 if __name__ == '__main__':
     printFileLength("sample.txt", callbackFunc1)
     printFileLength("sample.txt", callbackFunc2)
