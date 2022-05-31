@@ -48,8 +48,8 @@ def find_path_dfs(maze):
         if current in visited:
             continue
         visited.add(current)
-        print("-------")
-        print(stack)
+        #print("-------")
+        #print(stack)
         for direction, neighbour in graph[current]:
             stack.append((path + direction, neighbour))
     return "NO WAY!"
@@ -99,3 +99,4 @@ MAZE = [
 print(maze2graph(MAZE))
 print(find_path_bfs(MAZE))
 print(find_path_dfs(MAZE))
+print(find_path_astar(MAZE))
