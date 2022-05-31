@@ -99,3 +99,4 @@ MAZE = [
 print(maze2graph(MAZE))
 print(find_path_bfs(MAZE))
 print(find_path_dfs(MAZE))
+print(find_path_astar(MAZE))
