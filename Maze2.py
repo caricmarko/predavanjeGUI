@@ -3,7 +3,7 @@ from pyamaze import maze,agent
 
 m=maze(20,20)
 
-m.CreateMaze(loopPercent=50)
+m.CreateMaze(loopPercent=50)        #max broj putanja 50,from source to destination
 
 a=agent(m,filled=True,footprints=True)
 
