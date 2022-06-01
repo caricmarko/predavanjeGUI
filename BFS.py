@@ -61,7 +61,7 @@ g.addEdge(3, 3)
  
 print ("Following is Breadth First Traversal"
                   " (starting from vertex 2)")
-g.BFS(2)
+g.BFS(2)        #od kog cvora da krece ispis,roditelj/deca,usmereni graf
 
 g = Graph()
 g.addEdge(0, 1)
