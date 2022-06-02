@@ -12,8 +12,6 @@ root.geometry('600x300')
 root['bg'] = 'white'
 frame = Frame(root,width=200,height=300,borderwidth=1,relief=RIDGE) 
 frame.grid(sticky="W") 
-  
-
 def get_meaning():
         dictionary=PyDictionary()
         get_word = entry.get()
@@ -68,5 +66,8 @@ meaning.place(x=230,y=120)
 
 output = Text(root,height=8,width=40,borderwidth=2,relief=RIDGE)
 output.place(x=230,y=160)
+
+
+
 
 root.mainloop()

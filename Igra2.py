@@ -6,7 +6,8 @@ x = 0
 y = 0
 spd1 = 40 
 spd2 = 70 
-red_box = c.create_rectangle(x,95,x+20,115,fill="red",width=0) 
+red_box = c.create_rectangle(x,95,x+20,115,fill='red',width=0)
+ 
 def update(): 
     global x,y
     global spd1,spd2
