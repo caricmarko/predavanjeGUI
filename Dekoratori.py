@@ -59,8 +59,11 @@ def hello_decorator(func):
  
  
 # defining a function, to be called inside wrapper
+#@hello_decorator
 def function_to_be_used():
     print("This is inside the function !!")
+
+#function_to_be_used()
  
  
 # passing 'function_to_be_used' inside the
