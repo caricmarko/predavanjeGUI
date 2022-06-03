@@ -16,7 +16,7 @@ class test:pass
 test.x = 45
  
 # Defining class methods
-test.foo = lambda self: print('Hello')
+test.foo = lambda self: print("Hello")
  
 # creating object
 myobj = test()
