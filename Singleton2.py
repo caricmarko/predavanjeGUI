@@ -32,3 +32,11 @@ if __name__ == "__main__":
     # pick the instance of the class
     obj = Singleton.getInstance()
     print(obj)
+    obj = Singleton.getInstance()
+    print(obj)
+    obj = Singleton.getInstance()
+    print(obj)
+    obj = Singleton.getInstance()
+    print(obj)
+    obj = Singleton.getInstance()
+    print(obj)
