@@ -13,7 +13,7 @@ class Course_At_GFG:
         """course factory is out abstract factory"""
  
         self.course_factory = courses_factory
- 
+
     def show_course(self):
  
         """creates and shows courses using the abstract factory"""
