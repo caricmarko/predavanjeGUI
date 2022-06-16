@@ -14,5 +14,5 @@ class TestFishTank(unittest.TestCase):
         self.assertFalse(self.fish_tank.has_water)
 
     def test_fish_tank_can_be_filled(self):
-        #self.fish_tank.fill_with_water()
+        self.fish_tank.fill_with_water()
         self.assertTrue(self.fish_tank.has_water)

@@ -36,7 +36,7 @@ if __name__ == '__main__':
 if __name__ == '__main__':
     # read input from the user
     side = int(input('enter the side length to create a Square: '))
-      
+    assert side >= 0, "GRESKA" 
     # create a square with the provided side
     square = Square(side)
   

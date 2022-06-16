@@ -29,8 +29,8 @@ class TestStringMethods(unittest.TestCase):
     # Returns true if the string splits and matches
     # the given output.
     def test_split(self):        
-        s = 'hello world'
-        self.assertEqual(s.split(), ['hello', 'world'])
+        s = 'hello 5'
+        self.assertEqual(s.split(), ['hello', '5'])
         with self.assertRaises(TypeError):
             s.split(2)
   

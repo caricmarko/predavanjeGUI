@@ -17,6 +17,8 @@ def debugmethods(cls):
     # if exist, replace it with debugged version
     for key, val in vars(cls).items():
         if callable(val):
+            print(key)
+            print(val)
             setattr(cls, key, debug(val))
     return cls
  
