@@ -17,6 +17,11 @@
                     counter--;
                     document.querySelector('h1').innerHTML = counter;
                 };
+
+                document.querySelector('#baci_5').onclick = () => {
+                    counter+=5;
+                    document.querySelector('h1').innerHTML = counter;
+                };
             });
         </script>
     </head>
@@ -24,5 +29,6 @@
         <h1>0</h1>
         <button id="increase">+</button>
         <button id="decrease">-</button>
+        <button id="baci_5">5</button>
     </body>
 </html>
