@@ -98,4 +98,3 @@ class Paint(object):
 
 if __name__ == '__main__':
     Paint()
-	
