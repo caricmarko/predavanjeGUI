@@ -6,11 +6,12 @@ from rest_framework import status
 from urllib import response
 from rest_framework.decorators import api_view
 
-
+@api_view(['GET'])
 def drink_list(request):
     drinks = Drinks.objects.all()
     serializer = DrinkSerializer(drinks,many=True)
-    return JsonResponse({"drinks":serializer.data})
+    #return JsonResponse({"drinks":serializer.data})
+    return Response({"drink":serializer.data})
 
 @api_view(['GET', 'PUT','DELETE'])
 def drink_detail(request,id):
@@ -22,9 +23,14 @@ def drink_detail(request,id):
         serializer = DrinkSerializer(drink)
         return Response({"drink":serializer.data})
     elif(request.method=='PUT'):
-        pass
+        serializer = DrinkSerializer(drink,data=request.data)
+        if(serializer.is_valid()):
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.error,status=status.HTTP_400_BAD_REQUEST)
     elif(request.method=='DELETE'):
-        pass
+        drink.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
 
 def food_list(request):
     food = Food.objects.all()
